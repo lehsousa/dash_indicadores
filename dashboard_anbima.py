@@ -22,7 +22,7 @@ try:
         genai.configure(api_key=api_key)
         
         # Instancia o modelo
-        model_ia = genai.GenerativeModel('gemini-1.5-flash')
+        model_ia = genai.GenerativeModel('gemini-flash-latest')
         ia_ativa = True
     else:
         st.warning("⚠️ Chave de API não encontrada. Configure o secrets.toml.")
